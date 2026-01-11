@@ -1,6 +1,7 @@
-# 🚗 Car Rental System
+# 🚗 Smart Car Rental System
 
-Explore the world of car rentals with the **Car Rental System**, a Java-based console application that combines learning and simulation. 🌟
+Explore the world of car rentals with the ** Smart Car Rental System**, a Java-based console application that combines learning and simulation. 
+A Java-based console application for managing car rentals. This is an **enhanced version** with added features like car search and availability validation.🌟
 
 ## Features
 
@@ -12,7 +13,11 @@ Explore the world of car rentals with the **Car Rental System**, a Java-based co
 
 ## Getting Started
 
-1. **Clone the Repo**: `git clone https://github.com/prabhatthakuryt/Car-Rental-System.git`
+1. **Clone the Repo**: `git clone https://github.com/Sudha530/Smart-Car-Rental-System
+
+## How to Run
+1. Compile `Main.java`  
+2. Run `java Main`  
 
 ## Contributions Welcome! 🎉
 
