@@ -141,6 +141,8 @@ class CarRentalSystem {
             System.out.println("1. Rent a Car");
             System.out.println("2. Return a Car");
             System.out.println("3. Exit");
+            System.out.println("4. View Available Cars");
+            System.out.println("5. Search Car");
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
@@ -233,10 +235,40 @@ class CarRentalSystem {
             } else {
                 System.out.println("Invalid choice. Please enter a valid option.");
             }
+            
+            if (choice == 4) {
+            System.out.println("\nAvailable Cars:");
+        for (Car car : cars) {
+        if (car.isAvailable()) {
+            System.out.println(car);
         }
+            }
+        }
+             else if (choice == 5) {
+        System.out.print("Enter car brand or model to search: ");
+         String keyword = scanner.nextLine().toLowerCase();
+
+        boolean found = false;
+    for (Car car : cars) {
+        if (car.getBrand().toLowerCase().contains(keyword)
+                || car.getModel().toLowerCase().contains(keyword)) {
+            System.out.println(car);
+            found = true;
+        }
+    }
+
+    if (!found) {
+        System.out.println("No car found.");
+    }
+}
+
+}
+   {
+     }
 
         System.out.println("\nThank you for using the Car Rental System!");
-    }
+         
+}
 
 }
 public class Main{
